@@ -1,0 +1,14 @@
+Consider the following three calls to show_bytes:
+
+int val = 0x87654321;
+byte_ptr valp = (byte_ptr) &val;
+show_bytes(valp, 1);    /* A */
+show_bytes(valp, 2);	/* B */	
+show_bytes(valp, 3);	/* c */
+
+Indicate the values that will be printed by each call on a little-endian machine and on a big-endian machine:
+
+A. Little-endian: 0x21,						Big-endian: 0x87
+B. Little-endian: 0x21 0x43, 				Big-endian: 0x87 0x65
+C. Little-endian: 0x21,0x43, 0x65,			Big-endian: 0x87 0x65 0x43
+
