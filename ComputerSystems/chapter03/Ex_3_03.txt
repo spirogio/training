@@ -1,0 +1,7 @@
+movb $0xF, (%ebx)		--------> Memmory address must be 64bit
+movl %rax, (%rsp)		--------> %rax is 64bit and we are moving 32bit
+movw (%rax), 4(%rsp)	--------> can't move from memmory to memmory in one command
+movb %al, %sl			--------> there is no %sl
+movq %rax, $0x123		--------> cannot move to immediate
+movl %eax, %rdx			--------> wrong destination or suffix
+movb %si, 8(%rbp)		--------> it's %sil

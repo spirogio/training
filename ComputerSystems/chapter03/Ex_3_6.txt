@@ -1,0 +1,8 @@
+Instruction							Result
+**************************************************
+leaq 9(%rdx), %rax					9+q
+leaq (%rdx, %rbx), %rax 			q+p
+leaq (%rdx, %rbx, 3), %rax			q+3*p
+leaq 2(%rbx, %rbx, 7), %rax			8p+2
+leaq 0xE(,%rdx,3), %rax				3*q+14
+leaq 6(%rbx, %rdx, 7), %rax			7*q+p+6	

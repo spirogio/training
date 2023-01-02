@@ -1,0 +1,6 @@
+short scale3(short x, short y, short z){
+	short t = 10*y + z + x*y; (t = y * (10+x) + z) 
+	return t;
+}
+
+
