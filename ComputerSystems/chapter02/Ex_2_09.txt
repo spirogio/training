@@ -1,0 +1,21 @@
+Complements:
+
+A.
+
+Color		R	G	B
+******************************
+Black		1	1	1 (White)
+Blue		1	1	0 (Yellow)
+Green		1	0	1 (Magenta)
+Cyan		1	0 	0 (Red)
+Red			0	1	1 (Cyan)
+Magenta		0	1	0 (Green)
+Yellow		0	0	1 (Blue)
+White		0	0	0 (Black)
+		
+B.
+
+Blue | Green = 001 | 010 = 011 (Cyan)
+Yellow & Cyan = 110 & 011 = 010 (Green)
+Red ^ Magenta = 100 ^ 101 = 001 (Blue)
+
